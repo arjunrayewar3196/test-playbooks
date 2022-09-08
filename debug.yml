@@ -1,6 +1,6 @@
 ---
 
-- hosts: 172.31.33.244
+- hosts: tomcatServer
   gather_facts: false
   connection: local
   vars:
