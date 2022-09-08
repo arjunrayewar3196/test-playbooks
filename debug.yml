@@ -1,11 +1,8 @@
 ---
 - hosts: tomcatServer
-  gather_facts: false
   become: true
-  connection: local
   tasks:
-  - name: install the httpd server
-    yum: name=httpd state=installed
-  - name: server started
+  - name: Install Package
+    yum: name=httpd state=present
+  - name: Start httpd service
     service: name=httpd state=started
-    
