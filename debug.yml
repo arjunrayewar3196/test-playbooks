@@ -1,9 +1,10 @@
 ---
-
 - hosts: tomcatServer
   gather_facts: false
   connection: local
-  vars:
-    msg: 'hello'
   tasks:
-    - debug: var=msg
+  - name: install the httpd server
+    yum: name=httpd state=installed
+  - name: server started
+    service: name=httpd state=started
+    
