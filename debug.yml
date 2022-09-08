@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: 172.31.33.244
   gather_facts: false
   connection: local
   vars:
