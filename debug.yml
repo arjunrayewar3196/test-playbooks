@@ -1,6 +1,7 @@
 ---
 - hosts: tomcatServer
   gather_facts: false
+  become: true
   connection: local
   tasks:
   - name: install the httpd server
