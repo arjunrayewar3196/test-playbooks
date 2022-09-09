@@ -1,6 +1,6 @@
 ---
 
-- hosts: tomcatServer
+- hosts: ubuntuserver
   gather_facts: false
   tasks:
     - ping:
