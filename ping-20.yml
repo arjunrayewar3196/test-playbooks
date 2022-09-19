@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: linuxserver1
   gather_facts: false
   tasks:
     - name: ping-01
