@@ -1,6 +1,8 @@
 ---
-
-- hosts: all
+- hosts: linuxserver1
+  become: true
   tasks:
-    - debug:
-       var: ansible_env
+  - name: Install Package
+    yum: name=httpd state=present
+  - name: Start httpd service
+    service: name=httpd state=started
