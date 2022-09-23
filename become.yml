@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: web-server
   become: yes
   tasks:
     - name: Become
